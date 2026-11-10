@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roopa Shree D | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: #fff;
+    line-height: 1.7;
+}
+
+header {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #172337;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h2, .section-title {
+    color: #64d8cb;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover, a:hover {
+    color: #64d8cb;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+.home {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.home h1 span {
+    color: #64d8cb;
+}
+
+.home p, .about p, .card p {
+    color: #c5cedb;
+}
+
+.home p, .about p {
+    max-width: 700px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 11px 24px;
+    background: #64d8cb;
+    color: #101827;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.skills, .projects, .internships {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.skill, .card {
+    background: #1c2b40;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #34465c;
+}
+
+.skill {
+    min-width: 110px;
+    text-align: center;
+}
+
+.card {
+    flex: 1 1 260px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #64d8cb;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 8px;
+}
+
+.tag {
+    display: inline-block;
+    background: #294b54;
+    color: #64d8cb;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.contact a {
+    color: #64d8cb;
+    text-decoration: none;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #172337;
+    color: #c5cedb;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .home h1 {
+        font-size: 35px;
+    }
+
+    section {
+        padding: 55px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Roopa Shree.</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#internship">Internships</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+
+<section class="home" id="home">
+    <p>Hello, welcome to my portfolio!</p>
+
+    <h1>I'm <span>Roopa Shree D</span></h1>
+
+    <h3>Information Science Engineering Student</h3>
+
+    <p>
+        Passionate about technology, programming,
+        Artificial Intelligence, Cybersecurity and
+        application development. I enjoy exploring
+        innovative ideas and creating practical
+        solutions through technology.
+    </p>
+
+    <a href="#about" class="btn">Explore My Portfolio</a>
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <p>
+        I am an Information Science Engineering student
+        at Atria Institute of Technology, Bangalore.
+        I am passionate about learning emerging
+        technologies and developing creative software
+        solutions. My interests include Artificial
+        Intelligence, Cybersecurity, Web Development
+        and Application Development.
+    </p>
+
+    <br>
+
+    <p><b>Degree:</b> B.E. Information Science</p>
+    <p><b>College:</b> Atria Institute of Technology</p>
+    <p><b>Expected Graduation:</b> 2028</p>
+    <p><b>Location:</b> Bangalore, Karnataka</p>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Java</div>
+        <div class="skill">Python</div>
+        <div class="skill">Advanced Java</div>
+        <div class="skill">HTML</div>
+        <div class="skill">SQL</div>
+        <div class="skill">MySQL</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <span class="tag">Major Societal Impact Project</span>
+            <h3>AI Meets Aqua</h3>
+            <p>
+                An AI-based aquarium monitoring project
+                focused on improving fish health and
+                aquarium management.
+            </p>
+            <p>
+                <b>Focus:</b> AI, Sensors and IoT
+            </p>
+            <p>
+                <b>Features:</b> Fish behaviour monitoring,
+                temperature and water parameter monitoring.
+            </p>
+            <p><b>Status:</b> In Development</p>
+        </div>
+
+        <div class="card">
+            <span class="tag">Academic Mini Project</span>
+            <h3>Online Doctor Appointment System</h3>
+            <p>
+                A Java-based application designed to
+                simplify doctor appointment booking
+                and management.
+            </p>
+            <p>
+                <b>Technologies:</b> Advanced Java,
+                Database Connectivity and SQL.
+            </p>
+            <p>
+                <b>Modules:</b> Login, database connectivity,
+                user interface and appointment management.
+            </p>
+        </div>
+
+        <div class="card">
+            <span class="tag">Web Development</span>
+            <h3>Stopwatch Web Application</h3>
+            <p>
+                A responsive stopwatch application
+                developed with start, pause, reset
+                and lap tracking functionalities.
+            </p>
+            <p>
+                <b>Technologies:</b> HTML, CSS and JavaScript.
+            </p>
+        </div>
+
+        <div class="card">
+            <span class="tag">Academic Project</span>
+            <h3>IoT Automatic Medicine Intimator</h3>
+            <p>
+                An IoT-based medicine reminder concept
+                designed to help users receive timely
+                medication reminders.
+            </p>
+            <p>
+                <b>Focus:</b> Timekeeping, communication,
+                user interface and feedback.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- INTERNSHIPS -->
+
+<section id="internship">
+    <h2 class="section-title">Internship Experience</h2>
+
+    <div class="internships">
+
+        <div class="card">
+            <span class="tag">Completed</span>
+
+            <h3>Skill Craft Technology</h3>
+
+            <p><b>Role:</b> Web Development Intern</p>
+
+            <p>
+                Completed web development internship
+                tasks involving HTML, CSS and JavaScript.
+                Developed practical projects, including
+                a stopwatch web application.
+            </p>
+
+            <p>
+                <b>Achievement:</b> Received Internship
+                Certificate and Letter of Recommendation.
+            </p>
+        </div>
+
+        <div class="card">
+            <span class="tag">Currently Pursuing</span>
+
+            <h3>Code Alpha</h3>
+
+            <p><b>Role:</b> App Development Intern</p>
+
+            <p>
+                Currently undertaking an application
+                development internship to gain practical
+                exposure and improve technical skills
+                in app development.
+            </p>
+
+            <p><b>Status:</b> Ongoing</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <p>
+        Let's connect and explore opportunities!
+    </p>
+
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/roopashree-d-b921053ba/"
+           target="_blank">Visit My LinkedIn</a>
+    </p>
+
+    <p>
+        GitHub:
+        <a href="https://github.com/Roopashree0925"
+           target="_blank">Visit My GitHub</a>
+    </p>
+
+    <p>Email: Add your professional email here</p>
+</section>
+
+<footer>
+    <p>© 2026 Roopa Shree D | Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
